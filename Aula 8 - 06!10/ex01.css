@@ -1,1 +1,145 @@
-404: Not Found
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Rodapé*/
+.footer{
+    grid-area: footer;
+    background-color:#14223f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+/*Organizção da pagina*/
+
+
+
+.layout{
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100%;
+}
+
+/*Cabeçalho*/
+
+.cabecalho{
+    grid-area: header;
+    
+    background-color: #0f1f36;
+    color: white;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+/*Menu*/
+
+.barra-lateral {
+    grid-area: sidebar;
+
+    background-color: #1fb6aa;
+    padding: 20px;
+}
+
+.barra-lateral h2{
+    color: black;
+}
+
+.barra-lateral ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li{
+    margin: 10px;
+}
+
+.barra-lateral a{
+    display: block;
+    background-color: #14223f;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*hover = quando passamos o mouse em cima, o botao fica mais clarinho*/
+.barra-lateral a:hover{
+    background-color: #494dba;
+}
+
+.grid-principal {
+    grid-area: main;
+    padding: 30px;    
+}
+
+.grid-principal h2 {
+    margin-top: 0;
+    color: #0f1f36;
+}
+
+.grid-cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+}
+
+.card{
+    background-color: aliceblue;
+    padding:1rem;
+    border: 1px solid #14223f;
+    border-radius: 1rem;
+    box-shadow: 0 4px 13px black;
+}
+
+.card h3{
+    margin-top: 0;
+    color:#0f1f36;
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #14223f;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: #494dba;
+}
