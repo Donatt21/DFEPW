@@ -1,1 +1,32 @@
-404: Not Found
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+section{
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    color: darkblue;
+    font-weight: bold;
+}
